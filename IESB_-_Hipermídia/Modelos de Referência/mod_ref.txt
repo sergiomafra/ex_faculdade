@@ -1,0 +1,54 @@
+Modelo de Dexter
+
+		Proposto por Halasz e Schwarts em 1994, este modelo serviu como base para modelos futuros.
+	Divide o sistema de hipertexto em três camadas interligadas por interfaces.
+		As camadas são:
+		- Execução: representando a camada de interação com o usuário, onde o hipertexto é apresen-
+					tado. Compõe-se de mecanismos de acesso, visualização e manipulação de hipermí-
+					dia.
+		- Armazenamento: responsável por modelar a hierarquia de componentes de informações inter-
+						 relacionados por links. Os componentes são tratados como recipientes gené-
+						 ricos de dados nesta camada, sem uma especificação de sua estrutura inter-
+						 na. Assim sendo, não há uma diferenciação entre componentes de texto ou 
+						 gráficos, focando primordialmente na ferramenta que conecta os componentes
+						 e links para a formação da rede de hipertexto.
+		- Interna de Componentes: lida com o conteúdo e a estrutura interna dos componentes da ca-
+						 mada de armazenamento.
+
+		Interfaces:
+		- Especificação da Apresentação: passa informações para a Camada de Execução, apresentando
+						 o componente para o usuário.
+		- Ancoragem - examina o mecanismo de endereços de localização ou itens dentro do conteúdo
+					  de cada componente individual
+
+
+Modelo AHAM
+
+		AHAM (Adaptive Hypermedia Application Model) apresentado por Wu, Hoben e De Bra em 1998 di-
+	vide o sistema nas mesmas três camadas que o modelo de Dexter, com o diferencial de detalhar o
+	mecanismo de adaptação e apresentar um modelo com a finalidade educacional.
+		Essas diferenças acarretam na mudança da Camada de Armazenamento, tornando-se uma rede de
+	nós e links que consistem em três elementos:
+		- Modelo de Domínio: descreve a estrutura do domínio da aplicação.
+		- Modelo de Usuário: descreve os conceitos que o usuário possui sobre o modelo de domínio.
+		- Modelo de Ensino ou Adaptação: consiste em regras de adaptação utilizadas para adaptar os
+				conteúdos e links, com base nos modelos anteriores.
+
+Modelo Munich
+
+		Apresentado por Koch e Wirsing em 2002. Resultou em uma especificação formal, orientada a
+	objetos, baseada em modelos UML e na lingugem OCL.
+		Manteve a arquitetura de três camadas e incorporou os modelos da Camada de Armazenamento
+	de AHAM.
+
+Modelo de AHAM-MI e SHASIM
+
+		AHAM-MI foi proposto por Bugay em 2006 e se baseia nos modelos anteriores. Incorpora o con-
+	ceito de inteligências múltiplas de Garner, considerando a inteligência mais evidenciada no alu-
+	no, visual ou auditiva.
+
+		SHASHIM foi desenvolvido por Puga em 2008 e também tem fins educacionais. Além de incorporar
+	as inteligências multiplas na equação, considera os conceitos de Semiótica para estruturar a in-
+	terface homem-computador. Substitui a interface de Especialização de Apresentação do modelo Munich
+	com o Modelo de Signos, que fica responsável pela manutenção, seleção e composição dos signos que
+	serão utilizados para realizar o efeito adaptativo.
