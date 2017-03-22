@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	/*border: 1px solid black;*/
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+header {
+	padding-top: 5px;
+}
+
+header div a,
+header div a:hover,
+header div a:visited {
+	text-decoration: none;
+}
+
+#logo {
+	width: 120px;
+	height: 120px;
+	-webkit-border-radius: 60px;
+	-moz-border-radius: 60px;
+	-ms-border-radius: 60px;
+	-o-border-radius: 60px;
+	border-radius: 60px;
+	background-color: black;
+	color: white;
+	font-size: 20px;
+	font-family: monospace;
+	text-align: center;
+	line-height: 120px;
+}
+
+#slogan {
+	font-size:  50px;
+	font-family: Helvetica;
+	text-align: center;
+	line-height: 120px;
+}
+
+nav {
+	padding-top: 10px;
+}
+
+nav ul li {
+	display: inline;
+	list-style: none;
+	padding: 0 9%;
+}
+
+nav ul li a,
+nav ul li a:visited,
+nav ul li a:hover {
+	color: black;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+}
+
+.carousel-item img {
+	max-height: 400px;
+	left: 50%;
+	right: auto;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+	background-color: white;
+	color: gray;
+}
+
+footer {
+	font-size: 10px;
+	text-align: center;
+}
+
+#footer,
+#footer:visited,
+#footer:hover {
+	text-decoration: underline;
+	color: gray;
+}
