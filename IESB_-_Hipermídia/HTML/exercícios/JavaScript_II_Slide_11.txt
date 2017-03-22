@@ -1,0 +1,16 @@
+getElementById()
+
+	Este método retorna o elemento que tem o atributo ID com o valor especificado. Retorna null se não encontrar um elemento com o ID especificado.
+
+	Sintáxe: document.getElementById(elementID)
+
+	Exemplo: var x = document.getElementById("logo");
+
+
+getElementByName()
+
+	Retorna uma coleção de todos os elementos no documento com o nome especificado como um objeto NodeList. O objeto NodeList representa uma coleção de nós que podem ser acessados por índices, começando do zero.
+
+	Sintaxe: document.getElementByName(name)
+
+	Exemplo: var x = document.getElementByName("div");

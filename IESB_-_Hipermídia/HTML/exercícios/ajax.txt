@@ -1,0 +1,16 @@
+AJAX
+
+AJAX significa Asynchronous JavaScript And XML e não é uma linguagem de programação. Utiliza uma combinação de requisições de objetos XMLHttpRequest que são inbutidos no próprio browser e JavaScript e HTML DOM para mostrar na tela ou manipular os dados.
+
+É considerado um "sonho" para desenvolvedores, por:
+- Atualizar uma página sem a necessidade de recarregá-la;
+- Requisita e recebe dados de um servidor após a página já ter carregado;
+- Envia dados a um servidor em background.
+
+https://www.w3schools.com/js/pic_ajax.gif
+
+No link acima há uma figura que descreve o funcionamento do AJAX.
+
+1) Um evento ocorre e um objeto XMLHttpRequest é criado e uma requisição HTTP é enviadal
+2) O servidor que recebe a HTTPRequest a processa e envia os dados requisitados de volta para o navegador que o requisitou;
+3) Processa os dados recebidos utilizando JavaScript e recarrega a página automaticamente.

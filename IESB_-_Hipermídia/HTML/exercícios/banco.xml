@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<extrato>
+		<banco id="003">Caixa Econômica Federal</banco>
+		<agencia id="54007">Caixa Setor Sul 507</agencia>
+		<contacorrente id="707890-18">
+			<titulares>
+				<titular>
+					<nome>Roberval Cardoso</nome>
+					<cpf>001.001.001-00</cpf>
+				</titular>
+				<titular>
+					<nome>Roberlinda Cardoso</nome>
+					<cpf>002.002.002-00</cpf>
+				</titular>
+				<titular>
+					<nome>Robervalinda Cardoso</nome>
+					<cpf>101.101.101-00</cpf>
+				</titular>
+			</titulares>
+		</contacorrente>
+		<lancamentos>
+			<lancamento>
+				<data>17/03/2017</data>
+				<numdoc>000549</numdoc>
+				<desc>Motel Sai de Cima</desc>
+				<valor>120</valor>
+			</lancamento>
+			<lancamento>
+				<data>18/03/2017</data>
+				<numdoc>000671</numdoc>
+				<desc>Balinha 7 Belo</desc>
+				<valor>2</valor>
+			</lancamento>
+			<lancamento>
+				<data>18/03/2017</data>
+				<numdoc>000987</numdoc>
+				<desc>Armotecedores Canguru</desc>
+				<valor>390</valor>
+			</lancamento>
+			<lancamento>
+				<data>21/03/2017</data>
+				<numdoc>001108</numdoc>
+				<desc>Espetáculo Circense Chinês</desc>
+				<valor>150</valor>
+			</lancamento>
+		</lancamentos>
+	</extrato>
+</xml>

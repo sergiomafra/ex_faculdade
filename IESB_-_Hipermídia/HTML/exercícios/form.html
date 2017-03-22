@@ -1,0 +1,36 @@
+<!--
+
+		A tag form precisaria de um atributo action que seria a página que receberia as informações
+	e uma tag method="post" para enviar para esta página os valores dos inputs. Não foram preenchidos
+	para que o documento funcionasse.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" charset="UTF-8" />
+
+	<title>Form</title>
+
+	<script type="text/javascript">
+		function wakawaka() {
+			var x = document.forms["iesbform"]["nome"].value;
+			var y = document.forms["iesbform"]["local"].value;
+			if (x == "" || y == "") {
+				document.write("Campos não Preenchidos.. Não é possível enviá-los!");
+				return false;
+			}
+			document.write("Nome e Local de prova gravados!");
+		}
+	</script>
+
+</head>
+<body>
+	<form name="iesbform" onsubmit="return wakawaka()">
+		<label>Nome</label><input type="text" name="nome" /> <br />
+		<label>Local de Prova</label><input type="text" name="local" /><br />
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
