@@ -1,0 +1,48 @@
+Necessidade da Criptografia
+ Criptografia e uma "arte" milenar, surgida com a propria escrita. A cerca de dois mil anos, Julio Cesar ja se utilizava de processos criptograficos para proteger mensagens sensiveis que enviava a seus generais. Historicamente, o uso da criptografia esteve mais afeta a orgaos governamentais, notadamente ao circulo dos militares e pessoal diplomatico. A partir da Segunda Guerra Mundial, com o inicio da era dos computadores eletronicos e o impulso tomado pela informatizacao da sociedade, passou a ser tambem um problema afeto a entidades privadas, estendendo-se a toda a sociedade civil. A Segunda Guerra Mundial estabelece tambem outro marco na criptografia: o inicio da criptografia cientifica. Considera-se que a era anterior à Segunda Grande Guerra foi uma era em que a criptografia era mais propriamente uma arte, sem uso de uma metodologia cientifica para projeto e analise, dependendo fortemente da intuitividade e engenhosidade daqueles que se aventuravam nesta area. Foi Shannon quem, mais uma vez, estabeleceu as bases cientificas para a criptografia1, como ja havia feito um ano antes para a teoria da informacao2. Em Kahn3 podemos encontrar um detalhado relato historico da criptografia ate a 2a Guerra Mundial.
+ Normalmente aceita-se como natural a utilizacao da criptografia como um recurso de governos nacionais para a protecao de seus segredos, porem, ainda hoje, nao e muito entendida a necessidade da criptografia para a sociedade civil como um todo. Observe-se no entanto que o emprego cada vez maior de recursos eletronicos computacionais e de comunicacao nas rotinas diarias dos individuos e organizacoes, tais como registros medicos, legais, financeiros e funcionais, transferencias eletronicas de fundos, informacoes industriais e comerciais, para citar umas poucas, tem agravado o problema de se prover seguranca as informacoes manipuladas ou armazenadas. Tal agravamento e decorrente, primordialmente, dos seguintes pontos:
+ 1. barateamento do custo dos equipamentos  eletronicos, os quais, por sua vez, apresentam cada vez maior poder computacional;
+ 2. disponibilidade de imensas massas de informacao, devido a facilidade de processamento, tornando atrativo a pessoas ou entidades nao autorizadas a tentativa de obter tais informacoes de forma fraudulenta;
+ 3. a informacao e processada/armazenada na forma de sinais eletricos ou magneticos, de forma que, ao se "por as maos" na informacao, nao ficam "impressoes digitais", dificultando a identificacao do criminoso;
+ 4. a legislacao a respeito e inexistente ou ineficiente, pela propria natureza do problema.
+   O problema de seguranca de informacoes possui dois aspectos: um, de carater legal e social, com relacao ao direito a privacidade das informacoes, e outro, de carater tecnico, com relacao as tecnicas e meios de se prover uma seguranca adequada aos dados processados ou armazenados em um dado sistema. Entre estas tecnicas, a que se apresenta mais eficiente e o uso de CRIPTOGRAFIA.
+ A utilizacao de criptografia permite tambem a solucao de outro problema em um sistema automatizado de informacoes, qual seja, o problema de "Autenticacao" de mensagens e "Assinatura Digital", conforme teremos oportunidade de discutir em outro capitulo desta apostila. 
+ Na figura 1.1 ilustramos um sistema generico de processamento e comunicacao de informacoes, onde sao ressaltados os principais componentes do sistema.
+ Os componentes basicos de um sistema de processamento eletronico de informacoes sao um conjunto de facilidades de processamento, centralizadas ou nao, tais como um processador central (CPU) com seus perifericos tipicos: dispositivos para armazenamento magnetico, terminais de video, impressoras; um sistema de comunicacao de dados, para permitir acesso remoto, envolvendo, provavelmente, processadores de comunicacao (PCOM) e canais de comunicacao; e um conjunto de terminais remotos, os quais estao geralmente conectados a um processador de comunicacoes via canais de comunicacao, comutados ou nao. Todos estes componentes sao passiveis de serem o sujeito ou o objeto de inumeras falhas, tais como emissao de radiacoes eletromagneticas, falhas operacionais, etc.
+ Deve-se sempre considerar que as falhas de um sistema podem ser intencionais ou acidentais, e desta forma deve-se prover seguranca contra eventualidades de qualquer natureza. Assim, podemos classificar as vulnerabilidades (falhas) de um sistema da seguinte forma:
+
+a) acidentais
+   erro de usuario/operador, incluindo nao somente falhas tecnicas de utilizacao/operacao do sistema, como tambem falhas em cumprir os procedimentos operacionais e de seguranca estabelecidos;
+ 1. falhas de hardware;
+ 2. falhas do software basico;
+ 3. falhas do software aplicativo;
+ 4. falhas do equipamento de protecao/seguranca;
+ 5. acidentes naturais, tais como inundacoes e incendios.
+b) intencionais
+ 1. obtencao de arquivos (discos, fitas, listagens), por roubo ou copia, penetracao no sistema burlando os mecanismos de controle de acesso;
+ 2. interceptacao passiva ou ativa das comunicacoes;
+ 3. captacao de irradiacoes eletromagneticas emanadas pelo sistema;
+ 4. acao do operador, revelando ou relaxando medidas e procedimentos de protecao;
+ 5. acao do pessoal de manutencao, tais como sabotagem e uso indevido de utilitarios e equipamentos;
+ 6. acao de programadores, explorando o sistema, desarmando protecoes e forcando acessos atraves de "gatilhos" no sistema operacional e programas aplicativos;
+ 7. acao de usuarios, utilizando indevidamente os recursos do sistema e/ou burlando medidas de protecao.
+
+	e interessante se notar que as acoes intencionais de penetracao em um dado sistema podem ter motivacoes de tres naturezas distintas:
+ a. desafio intelectual - pelo simples "prazer obtido em vencer a maquina", que e o caso dos chamados "hackers", frequentemente citados no noticiario internacional;
+ b. emocional - como, por exemplo, por vinganca, perpetrada por um funcionario que se julgue prejudicado por uma empresa;
+ c. beneficios - no caso de estarem em jogo interesses economicos, comerciais, politicos, ou outros, que venham a beneficiar o atacante, pessoalmente ou institucionalmente.
+
+	Observamos entao que a seguranca de sistemas computacionais envolve quatro universos distintos, embora interrelacionados, a saber:
+ a. componentes - envolvendo equipamentos em geral, incluindo os meios fisicos de comunicacao;
+ b. informacao - ai incluido toda a informacao que sirva como entrada para o sistema, saida do sistema, ou mesmo contida no sistema, inclusive o proprio software operacional e apli cativo;
+ c. pessoal - envolvendo todo tipo de pessoal que tenha contato direto ou indireto com o sistema, desde gerentes a usuarios, passando por programadores, operadores e pessoal de apoio, tal como manutencao e limpeza;
+ d. servicos - entendidos como os recursos de apoio, tal como suprimento de energia, limpeza, manutencao, e comunicacao oral (fonia), etc.
+
+	As medidas para protecao do sistema dentro dos quatro universos destacados podem ser tomadas dentro das seguintes areas de seguranca:
+ a. seguranca fisica - envolvendo os aspectos de controle de acesso fisico de pessoal ao sistema, protecoes contra falhas do equipamento e protecoes contra acidentes naturais;
+ b. seguranca logica - envolvendo os aspectos de controle de acesso ao sistema atraves seus canais normais de acesso;
+ c. seguranca das comunicacoes - envolvendo os aspectos de protecao da informacao enquanto esta estiver em transito no sistema.
+
+	Nossa preocupacao estara centrada nos processos criptograficos aplicados a seguranca de dados, de uma forma geral.
+	A criptologia, o estudo dos processos criptograficos, e formada por duas disciplinas, de certa forma antagonicas e ao mesmo tempo complementares: a criptografia, que se preocupa com o projeto e construcao dos sistemas criptograficos, e a criptoanalise, que se ocupa de "quebrar" os sistemas criptograficos. Muitas vezes tem-se uma ideia de que a atividade de um criptoanalista seria uma atividade "suja", tentando obter os segredos de outrem, porem esta, a criptoanalise, e uma atividade essencial para verificarmos a seguranca oferecida por um algoritmo que se pretenda utilizar.
+	Embora alguns termos aqui utilizados possam ainda parecer um tanto obscuros, optamos por confiar no entendimento intuitivo do leitor, deixando as definicoes mais formais para serem explicitadas no decorrer do nosso curso, quando dispusermos de maior ferramental matematico.
