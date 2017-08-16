@@ -1,0 +1,7 @@
+Faça um programa que:
+
+a) utilize uma thread para realizar a multiplicação de matrizes, de números reais, de dimensão 500x500
+
+b) utilize pelo menos três threads para realizar a multiplicação de matrizes, de números reais, de dimensão 500x500. Monitore o uso dos processadores, para verificar se as threads foram distribuídas entre os processadores distintos.
+
+Em ambos os casos, controle o tempo de execução.

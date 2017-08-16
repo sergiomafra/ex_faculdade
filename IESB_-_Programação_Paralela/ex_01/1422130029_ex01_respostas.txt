@@ -1,0 +1,49 @@
+Questão 01
+	mul1: Cria uma matriz "z" de tamanho NxN. Para tal, percorre simultaneamente
+duas matrizes também de tamanho N por N, realizando o somatório da multiplicação
+de todos os elemento de uma coluna "i" da matriz "x" pelos elementos da linha "j"
+da matriz "y" para gerar o elemento z[i][j].
+	mul3: Cria uma matriz "z" de tamanho MxK. Porém, divide a matriz em blocos de
+tamanho 8x8 e realiza a mesma operação que mul1 para gerar o elemento z[i][j]
+(chamado de z[r][s], nesta função).
+
+Questão 02
+	Este programa pode ser paralelizado, mas do modo como foi escrito não é. Na
+função mul1 o programa ocorre de forma sequencial, passo a passo, incapacitando
+o paralelismo. Porém, na ideia de mul3, a divisão da matriz de tamanho 1024x1024
+em pequenas matrizes 8x8, possibilita a implementação de threads para dividirem
+o trabalho. Caso o computador possua mais de um núcleo de processamento, o código
+pode ser executado de forma mais rápida e eficiente.
+
+Questão 03
+	Realizando-se 6 aferições, percebe-se que o tempo de execução de mul1 e mul3
+são muito próximos. Em alguns casos, mul1 foi mais rápida que mul3 e vice-versa.
+Segue abaixo os dados obtidos:
+
+- Medição 01
+ Time Elapsed for mul1: 2.836488 seconds
+ Time Elapsed for mul3: 2.843329 seconds
+
+- Medição 02
+ Time Elapsed for mul1: 2.799343 seconds
+ Time Elapsed for mul3: 2.773929 seconds
+
+- Medição 03
+ Time Elapsed for mul1: 2.788273 seconds
+ Time Elapsed for mul3: 2.782456 seconds
+
+- Medição 04
+ Time Elapsed for mul1: 2.754669 seconds
+ Time Elapsed for mul3: 2.780194 seconds
+
+- Medição 05
+ Time Elapsed for mul1: 2.806273 seconds
+ Time Elapsed for mul3: 2.796024 seconds
+
+- Medição 06
+ Time Elapsed for mul1: 2.846421 seconds
+ Time Elapsed for mul3: 2.801246 seconds
+
+ A conclusão é que neste caso, sem a implementação da programação paralela, mesmo
+ que a ideia de divisão de trabalho esteja implementada, a execução foi realizada
+ em sequência, não havendo ganho de performance.
