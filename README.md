@@ -1,2 +1,2 @@
-# ex_faculdade
-Exercícios da Faculdade
+# exsfac
+Nada de mais... Exercícios da Faculdade... :P
