@@ -8,5 +8,5 @@ class Arc:
         self.distance = distance
 
     def __str__(self):
-        return '{} -> {} | distance: {}'.format(self.base.name,
-                self.arrow.name, self.distance)
+        return ( 'Arc: {} -> {} | Distance: {} Km'.format(self.base.name,
+                self.arrow.name, int(self.distance)/1000) )

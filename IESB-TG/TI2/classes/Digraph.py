@@ -6,9 +6,11 @@ from math import pow as mpow
 
 class Digraph:
 
-    def __init__(self, dados):
+    def __init__(self, dados, search_radius):
         self.vertexes = self._create_vertexes_from_file(dados)
         self.arcs = self._create_arcs()
+        self.search_radius = search_radius * 1000
+        self.available_professionals = self._create_list_of_aps()
 
     def _create_vertexes_from_file(self, dados):
 
@@ -60,6 +62,22 @@ class Digraph:
                 arcs.append( Arc(vertex2, vertex1, distance) )
 
         return arcs
+
+    def _create_list_of_aps(self):
+        arcs = []
+
+        for arc in self.arcs:
+            if arc.base.name == 'User' and \
+               arc.distance <= self.search_radius:
+                arcs.append(arc)
+
+        return arcs
+
+    def available_professionals(self):
+        pass
+
+    def vertexlen(self):
+        return len(self.vertexes)
 
     def vprint(self):
         for v in self.vertexes:
